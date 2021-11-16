@@ -1,5 +1,54 @@
 <html lang="en">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="p-4">
+    <header style="height: 100px">
+      <div class="bg-info h-20">ゴッティさん、ありがとうございました！</div>
+    </header>
+    <main>
+      <!-- それぞれ写真とか好きに入れて大丈夫です！ -->
+      <!-- 受講番号01から順番に！ -->
+      <div class="container">
+        <div
+          class="card abe-box"
+          onclick="message('隠れメッセーーージ！ゴッティーさんにはいつも「あべちゃ〜ん」って呼んでもらって可愛がってくれて嬉しかったです。これからも一緒にご飯行って下さいね！')"
+          style="
+            background: rgba(0, 0, 0, 0.5) center;
+            background-image: url('./image/abetter_rogo.png');
+            padding: 1em 1.5em;
+            border: double 4px #ff69b4;
+            background-size: 34%;
+          "
+          id="abebox"
+        >
+          <div
+            id="toggle"
+            class="card-body"
+            style="color: black; text-shadow: #2ac7da 2px 1px 10px"
+          >
+            <p>
+              いつも積みポイントを一緒に考えてもらってありがとうございました！
+            </p>
+            <p>
+              ゴッティさんはいつも忙しいのに解決するまで面倒見てくれてホントに優しいと思いました！
+            </p>
+            <p>ゴッティさんの幅広い知識と優しさにはホントに助けられました！</p>
+            <p>
+              これからも一緒にご飯に行ったりしたいです!半年間の短い間でしたけど、ゴッティさんが担任でホントに良かったです！
+            </p>
+            <p>ありがとうございました！</p>
+            <div class="text-end">安倍将史</div>
+          </div>
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -154,9 +203,8 @@
           <div class="text-end">名前</div>
         </div>
       </div>
-    </div>
-  </main>
-</body>
-
+    </main>
+    <script src="./abe.js"></script>
+  </body>
 </html>
 
