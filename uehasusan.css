@@ -1,0 +1,108 @@
+@charset "UTF-8";
+body {
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  min-height: 100%;
+  /* 1 */
+  overflow-wrap: break-word;
+  /* 2 */
+  padding: 0;
+  width: 100%;
+}
+
+/*========= 流れるテキスト ===============*/
+/*全共通*/
+.slide-in {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.slide-in_inner {
+  display: inline-block;
+}
+
+/*左右のアニメーション*/
+.leftAnime {
+  opacity: 0;
+  /*事前に透過0にして消しておく*/
+}
+
+.slideAnimeLeftRight {
+  -webkit-animation-name: slideTextX100;
+          animation-name: slideTextX100;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes slideTextX100 {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    /*要素を左の枠外に移動*/
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    /*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+
+@keyframes slideTextX100 {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    /*要素を左の枠外に移動*/
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    /*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+
+.slideAnimeRightLeft {
+  -webkit-animation-name: slideTextX-100;
+          animation-name: slideTextX-100;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes slideTextX-100 {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    /*要素を右の枠外に移動*/
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    /*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+
+@keyframes slideTextX-100 {
+  from {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    /*要素を右の枠外に移動*/
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    /*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=uehasusan.css.map */
