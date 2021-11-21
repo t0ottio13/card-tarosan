@@ -68,3 +68,18 @@ body {
     opacity: 1;
   }
 }
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color:rgb(255, 223, 223);
+  border-radius: 30px;
+  border: none;
+}
+
+img {
+  object-fit: contain; /* 🖐 */
+}
