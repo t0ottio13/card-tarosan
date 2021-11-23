@@ -534,281 +534,16 @@ template {
 }
 
 body {
-  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   min-height: 100%;
   /* 1 */
-  overflow-wrap: break-word;
-  /* 2 */
   padding: 0;
   width: 100%;
-}
-
-/*========= 流れるテキスト ===============*/
-/*全共通*/
-.header {
-  font-size: 2.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 32px;
-}
-
-.slide-in {
-  overflow: hidden;
-  display: inline-block;
-}
-
-.slide-in_inner {
-  display: inline-block;
-}
-
-/*左右のアニメーション*/
-.leftAnime {
-  opacity: 0;
-  /*事前に透過0にして消しておく*/
-}
-
-.slideAnimeLeftRight {
-  -webkit-animation-name: slideTextX100;
-          animation-name: slideTextX100;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-@-webkit-keyframes slideTextX100 {
-  from {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-    /*要素を左の枠外に移動*/
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    /*要素を元の位置に移動*/
-    opacity: 1;
-  }
-}
-
-@keyframes slideTextX100 {
-  from {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-    /*要素を左の枠外に移動*/
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    /*要素を元の位置に移動*/
-    opacity: 1;
-  }
-}
-
-.slideAnimeRightLeft {
-  -webkit-animation-name: slideTextX-100;
-          animation-name: slideTextX-100;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-@-webkit-keyframes slideTextX-100 {
-  from {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    /*要素を右の枠外に移動*/
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    /*要素を元の位置に移動*/
-    opacity: 1;
-  }
-}
-
-@keyframes slideTextX-100 {
-  from {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    /*要素を右の枠外に移動*/
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    /*要素を元の位置に移動*/
-    opacity: 1;
-  }
-}
-
-.card, .card-sayapasu, .card-tizu, .card-hige, .card-matsuo, .card-matsunaga, .card-miya, .card-waka, .card-mori, .card-ishi {
   color: #333;
-  line-height: 1.8;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  word-wrap: break-word;
-  padding: 30px;
-  border-radius: 50%;
-  -webkit-box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.25);
-          box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.25);
-  background: linear-gradient(20deg, #FFBBD3, #F9DB4A);
-  -webkit-animation: GradientBackground1 5s ease infinite;
-          animation: GradientBackground1 5s ease infinite;
-}
-
-.card-abe {
-  background: rgba(0, 0, 0, 0.5) center;
-  background-image: url("./image/べじゃく.jpg");
-  padding: 1em 1.5em;
-  border: double 4px #ff69b4;
-  background-size: 16%;
-}
-
-.card-sayapasu {
-  font-size: 14px;
-  border-radius: 50%;
-  width: 700px;
-  height: 700px;
-}
-
-.card-tizu {
-  -webkit-animation: bgchange_1 15s ease infinite;
-          animation: bgchange_1 15s ease infinite;
-  /*変化の時間を変更したい場合は20sの部分を好きな時間に変更*/
-  -webkit-animation: GradientBackground2 15s ease infinite;
-          animation: GradientBackground2 15s ease infinite;
-  width: 450px;
-  height: 450px;
-}
-
-.card-hige {
-  -webkit-animation: bgchange_2 20s ease infinite;
-          animation: bgchange_2 20s ease infinite;
-  /*変化の時間を変更したい場合は20sの部分を好きな時間に変更*/
-  width: 550px;
-  height: 550px;
-}
-
-.card-matsuo {
-  -webkit-animation: bgchange_3 15s ease infinite;
-          animation: bgchange_3 15s ease infinite;
-  /*変化の時間を変更したい場合は20sの部分を好きな時間に変更*/
-  width: 550px;
-  height: 550px;
-}
-
-.card-matsunaga {
-  font-size: 14px;
-  width: 750px;
-  height: 750px;
-}
-
-.card-miya {
-  width: 500px;
-  height: 500px;
-}
-
-.card-waka {
-  -webkit-animation: bgchange_2 20s ease infinite;
-          animation: bgchange_2 20s ease infinite;
-  /*変化の時間を変更したい場合は20sの部分を好きな時間に変更*/
-  width: 400px;
-  height: 400px;
-}
-
-.card-mori {
-  -webkit-animation: bgchange_3 15s ease infinite;
-          animation: bgchange_3 15s ease infinite;
-  /*変化の時間を変更したい場合は20sの部分を好きな時間に変更*/
-  width: 500px;
-  height: 500px;
-}
-
-.card-ishi {
-  -webkit-animation: bgchange_2 20s ease infinite;
-          animation: bgchange_2 20s ease infinite;
-  /*変化の時間を変更したい場合は20sの部分を好きな時間に変更*/
-  width: 600px;
-  height: 600px;
-}
-
-img {
-  width: 100px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  /* 🖐 */
-}
-
-@-webkit-keyframes GradientBackground1 {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes GradientBackground1 {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@-webkit-keyframes GradientBackground2 {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes GradientBackground2 {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  background: linear-gradient(20deg, #3778D2, #81DCF1, #CFF6FF);
+  background-size: 1500% 1500%;
+  -webkit-animation: GradientBackground 5s ease infinite;
+          animation: GradientBackground 5s ease infinite;
 }
 
 @-webkit-keyframes GradientBackground {
@@ -833,5 +568,145 @@ img {
   100% {
     background-position: 0% 50%;
   }
+}
+
+/*========= 流れるテキスト ===============*/
+/*全共通*/
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2rem;
+  position: relative;
+  padding: 0.5em 0.7em;
+  background: #e6f4ff;
+  color: #5c98d4;
+  font-weight: bold;
+  width: 80%;
+  margin: 80px auto;
+  border-radius: 10px;
+}
+
+.header:after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 30px;
+  border: 15px solid transparent;
+  border-top: 15px solid #e6f4ff;
+  width: 0;
+  height: 0;
+}
+
+.header p {
+  display: block;
+  margin: auto;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 50px 80px 50px;
+  gap: 80px 0;
+  margin: 50px auto;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card, .card-sayapasu, .card-tizu, .card-hige, .card-matsuo, .card-matsunaga, .card-miya, .card-waka, .card-mori, .card-ishi {
+  color: #0e2f8e;
+  line-height: 2;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  word-wrap: break-word;
+  padding: 80px 60px;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  -webkit-animation: GradientBackground1 5s ease infinite;
+          animation: GradientBackground1 5s ease infinite;
+  background: #ffffff99;
+}
+
+.name, .name-sayapasu {
+  font-size: 28px;
+  font-weight: 300;
+  -ms-flex-preferred-size: 5%;
+      flex-basis: 5%;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  margin: 30px;
+  color: #011247;
+}
+
+.card-abe {
+  background: rgba(0, 0, 0, 0.5) center;
+  background-image: url("./image/べじゃく.jpg");
+  padding: 1em 1.5em;
+  border: double 4px #ff69b4;
+  background-size: 16%;
+  margin: 32px;
+}
+
+.card-sayapasu {
+  width: 100%;
+}
+
+.name-sayapasu {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: auto;
+}
+
+.card-tizu {
+  width: 100%;
+}
+
+img {
+  width: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  /* 🖐 */
 }
 /*# sourceMappingURL=uehasusan.css.map */
