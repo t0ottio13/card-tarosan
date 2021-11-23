@@ -10,110 +10,70 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;700&display=swap"
             rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
         <link rel="stylesheet" href="./uehasusan.css" />
     </head>
 
-    <body class="p-4">
-        <header style="height: 100px;">
-            <p>
-                <span class="slide-in leftAnime">
-                    <span class="slide-in_inner leftAnimeInner">ウエハースさん、ありがとうございました！</span>
-                </span>
-            </p>
+    <body>
+        <header class="header">
+            <img src="./image/flower_hibiscus.png" alt="ハイビスカス">
+            <span class="slide-in leftAnime">
+                <span class="slide-in_inner leftAnimeInner">ウエハースさん、ありがとうございました！</span>
+            </span>
         </header>
         <main>
             <!-- それぞれ写真とか好きに入れて大丈夫です！ -->
             <!-- 受講番号01から順番に！ -->
-            <div class="container d-grid gap-3">
-                <div class="row gap-3">
-                    <div class="card abe-box col-sm" onclick="message('隠れメッセーーージ！ウエハースの酒に酔って暴れる姿がめっちゃ好きです！ww')" style="
-                            background: rgba(0, 0, 0, 0.5) center;
-                            background-image: url('./image/べじゃく.jpg');
-                            padding: 1em 1.5em;
-                            border: double 4px #ff69b4;
-                            background-size: 16%;
+            <div class="card-abe col-sm" onclick="message('隠れメッセーーージ！ウエハースの酒に酔って暴れる姿がめっちゃ好きです！ww')" style="
+                        
                         " id="abebox">
-                        <div id="toggle" class="card-body" style="color: black; text-shadow: #2ac7da 2px 1px 10px">
-                            <p>ウエハースさんのキャラいい感じ！</p>
-                            <p>
-                                「なんかこの前もっとしっかりしたい」って言ってたけどウエハースさんはそのままがいいと思います！十分しっかりしてる。飲み会とかもうウエハースさんがいないと始まらないwジーズにいてくれてありがとう！！！
-                            </p>
-                            <div class="text-end">安倍将史</div>
-                        </div>
-                    </div>
-                    <div class="card col-8 m-16">
-                        <div class="card-body">
-                            <p>ウエハースさん、半年間ありがとうございました！</p>
-                            <p>めちゃくちゃ美人なのに、みんなに優しくてノリも良くて「こんな人になりたいな」っていつも思ってました。</p>
-                            <p>深夜まで飲んでも次の日朝早くから学校に来て笑顔で迎えてくれるウエハースさん。</p>
-                            <p>LAB６のみんなも「ウエハースさんが担任で良かった」って半年後絶対言うだろうなって思います。</p>
-                            <p>GGAの時、緊張してる私の肩をポンと叩いてくれて、あの瞬間ホントに緊張が解けました。</p>
-                            <p>・・・登壇したら死にましたがwwww</p>
-                            <p>飲み会の時もみんなはカラオケに行ってるのに翌日の講義の為に我慢して帰ったウエハースさん。</p>
-                            <p>帰り道にこれからの起業の話ができて嬉しかったです。</p>
-                            <p>来週もG's来るので、いつもの「おはよーございまーす！」で元気分けて下さい♪</p>
-                            <p>これからも宜しくお願いしますm(_ _)m</p>
-                            <div class="text-end">サイコパス上薗</div>
-                        </div>
-                    </div>
-                    <div class=" col-1">
-                            <img src="./image/flower_hibiscus (1).png" alt="ハイビスカス">
-                    </div>
-                </div>
-                <div class="row gap-3">
-                    <div class="card col">
-                        <div class="card-body">
-                            <p>いつも支えていただきありがとうございます！</p>
-                            <p>もっと話してみたいなと思っていたら、卒業を迎えてしまいました</p>
-                            <p>これからもちょこちょこG'sにコードをかきにくるのでよろしくお願いします</p>
-                            <p>LAB6の担任頑張ってください！</p>
-                            <div class="text-end">田岸将勝</div>
-                        </div>
-                    </div>
-                    <div class="card col">
-                        <div class="card-body">
-                            <p>学校ではいつも明るく笑顔で迎えてくれて、ありがとうございました❗️</p>
-                            <p>ノリも良くて、飲み会も遅くまで付き合ってくれて最高でした🙌</p>
-                            <p>いまはLAB6期の担任で大変かと思いますが、ウエハースさんならきっとLAB5期に負けないクラスにできると思います。</p>
-                            <p>まくとぅーそーけー、なんくるないさ</p>
-                            <div class="text-end">比嘉洋一</div>
-                        </div>
-                    </div>
+                <div id="toggle" class="card-body" style="color: black; text-shadow: #2ac7da 2px 1px 10px">
+                    <p>ウエハースさんのキャラいい感じ！</p>
+                    <p>
+                        「なんかこの前もっとしっかりしたい」って言ってたけどウエハースさんはそのままがいいと思います！十分しっかりしてる。飲み会とかもうウエハースさんがいないと始まらないwジーズにいてくれてありがとう！！！
+                    </p>
+                    <div class="text-end">安倍将史</div>
                 </div>
             </div>
-            <div class="row">
-                <div class=" col">
-                        <img src="./image/building_syurijou.png" alt="首里城">
-                </div>
-                <div class="card col">
-                    <div class="card-body">
-                        <!-- この中は好きにいじって大丈夫です！ -->
-                        ここにそれぞれ寄せ書き
-                        受講番号01~
-                        <div class="text-end">名前</div>
-                    </div>
-                </div>
-            </div>
-           
-            <div class="card">
+            <div class="card-sayapasu col-8 m-16">
                 <div class="card-body">
-                    <!-- この中は好きにいじって大丈夫です！ -->
-                    ここにそれぞれ寄せ書き
-                    受講番号01~
-                    <div class="text-end">名前</div>
+                    <p>ウエハースさん、半年間ありがとうございました！</p>
+                    <p>めちゃくちゃ美人なのに、みんなに優しくてノリも良くて<br>「こんな人になりたいな」っていつも思ってました。</p>
+                    <p>深夜まで飲んでも次の日朝早くから学校に来て笑顔で迎えてくれるウエハースさん。</p>
+                    <p>LAB６のみんなも「ウエハースさんが担任で良かった」って半年後<br>絶対言うだろうなって思います。</p>
+                    <p>GGAの時、緊張してる私の肩をポンと叩いてくれて、あの瞬間ホントに緊張が解けました。</p>
+                    <p>・・・登壇したら死にましたがwwww</p>
+                    <p>飲み会の時もみんなはカラオケに行ってるのに翌日の講義の為に我慢して帰ったウエハースさん。</p>
+                    <p>帰り道にこれからの起業の話ができて嬉しかったです。</p>
+                    <p>来週もG's来るので、いつもの「おはよーございまーす！」で元気分けて下さい♪</p>
+                    <p>これからも宜しくお願いしますm(_ _)m</p>
+                    <div class="text-end">サイコパス上薗</div>
                 </div>
             </div>
-            <div class="card">
+
+            <div class="card-tizu">
                 <div class="card-body">
-                    <!-- この中は好きにいじって大丈夫です！ -->
-                    ここにそれぞれ寄せ書き
-                    受講番号01~
-                    <div class="text-end">名前</div>
+                    <p>いつも支えていただきありがとうございます！</p>
+                    <p>もっと話してみたいなと思っていたら、卒業を迎えてしまいました</p>
+                    <p>これからもちょこちょこG'sにコードをかきにくるのでよろしくお願いします</p>
+                    <p>LAB6の担任頑張ってください！</p>
+                    <div class="text-end">田岸将勝</div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card-hige">
+                <div class="card-body">
+                    <p>学校ではいつも明るく笑顔で迎えてくれて、<br>ありがとうございました❗️</p>
+                    <p>ノリも良くて、飲み会も遅くまで付き合ってくれて最高でした🙌</p>
+                    <p>いまはLAB6期の担任で大変かと思いますが、ウエハースさんならきっとLAB5期に負けないクラスにできると思います。</p>
+                    <p>まくとぅーそーけー、なんくるないさ</p>
+                    <div class="text-end">比嘉洋一</div>
+                </div>
+            </div>
+
+
+            <img src="./image/building_syurijou.png" alt="首里城">
+            <div class="card-matsuo">
                 <div class="card-body">
                     <p>ずっとオンラインで受講していたので</p>
                     <p>ピッチではじめてジーズに行った時、むちゃくちゃドキドキしてましたが</p>
@@ -125,16 +85,16 @@
                     <div class="text-end">松尾邦子</div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card-matsunaga">
                 <div class="card-body">
-                    <p>全力で頑張れといつも励ましてくれるウエハースさんの応援いつもありがたかったです。突然の授業参加からの課題参戦など、最高の笑いを数々提供してくださいました。
-                        あと、イベント後の渾身の沖縄料理の数々、あるはとても美味しかったです。ソーキそばは楽しみだったので食べることが出来なかったのは残念でしたが…。今後入ってくるシーズ生にも手料理の提供は続いていくことになるんですかね。もし、続くようでしたら、喜ばれそうですけど。
-                        仕事なので色々制約はあるかもしれませんが、ジーズナイトのような面白い企画含め、ウエハースさんにしかできないアプローチでジーズをもっともっともっと良くしていってもらいたいです！半年間、お世話になりました。ありがとうございました。そして今後ともどうぞ宜しくお願い致します。
+                    <p>全力で頑張れといつも励ましてくれるウエハースさんの応援いつもありがたかったです。<br>突然の授業参加からの課題参戦など、最高の笑いを数々提供してくださいました。
+                        <br>あと、イベント後の渾身の沖縄料理の数々、あるはとても美味しかったです。<br>ソーキそばは楽しみだったので食べることが出来なかったのは残念でしたが…。<br>今後入ってくるシーズ生にも手料理の提供は続いていくことになるんですかね。<br>もし、続くようでしたら、喜ばれそうですけど。
+                        <br>仕事なので色々制約はあるかもしれませんが、ジーズナイトのような面白い企画含め、<br>ウエハースさんにしかできないアプローチでジーズをもっともっともっと良くしていってもらいたいです！<br>半年間、お世話になりました。ありがとうございました。<br>そして今後ともどうぞ宜しくお願い致します。
                     </p>
                     <div class="text-end">松永貢征</div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card-miya">
                 <div class="card-body">
                     <p>いつも癒しをありがとうございました. </p>
                     <p>皆んなに愛されるキャラだと思いますので, 存分に活かして更なるG'sでのご活躍楽しみにしてます！ </p>
@@ -144,7 +104,7 @@
                     <div class="text-end">みやかわたくや</div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card-waka">
                 <div class="card-body">
                     <p>いつも元気をもらっていました！！！！！！！</p>
                     <p>ゴーヤチャンプルと餃子美味かったです〜！！</p>
@@ -153,7 +113,7 @@
                     <div class="text-end">若松ももこ</div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card-mori">
                 <div class="card-body">
                     <p>いつも気遣って頂きありがとうございました。</p>
                     <p>LAB6担任でこれまでより忙しく大変だと思いますがお体には十分気をつけて</p>
@@ -162,7 +122,7 @@
                     <div class="text-end">森重 健</div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card-ishi">
                 <div class="card-body">
                     <p>半年間ありがとうございました。</p>
                     <p>副担任として色々お世話頂き感謝しています。</p>
@@ -173,14 +133,7 @@
                     <div class="text-end">石橋</div>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-body">
-                    <!-- この中は好きにいじって大丈夫です！ -->
-                    ここにそれぞれ寄せ書き
-                    受講番号01~
-                    <div class="text-end">名前</div>
-                </div>
-            </div>
+
             </div>
             </div>
         </main>
