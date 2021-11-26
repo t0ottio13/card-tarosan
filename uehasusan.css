@@ -540,7 +540,7 @@ body {
   padding: 0;
   width: 100%;
   color: #333;
-  background: linear-gradient(20deg, #3778D2, #81DCF1, #CFF6FF);
+  background: linear-gradient(20deg, #8ebdff, #c1fff5, #b4e7ff);
   background-size: 1500% 1500%;
   -webkit-animation: GradientBackground 5s ease infinite;
           animation: GradientBackground 5s ease infinite;
@@ -570,8 +570,6 @@ body {
   }
 }
 
-/*========= 流れるテキスト ===============*/
-/*全共通*/
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -579,32 +577,27 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 2rem;
-  position: relative;
-  padding: 0.5em 0.7em;
-  background: #e6f4ff;
-  color: #5c98d4;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 60px;
+  margin: 0px auto;
+  background-color: #fff;
+}
+
+.header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.message {
+  font-size: 1.25rem;
+  color: #1b4ebd;
   font-weight: bold;
-  width: 80%;
-  margin: 80px auto;
-  border-radius: 10px;
-}
-
-.header:after {
-  position: absolute;
-  content: '';
-  top: 100%;
-  left: 30px;
-  border: 15px solid transparent;
-  border-top: 15px solid #e6f4ff;
-  width: 0;
-  height: 0;
-}
-
-.header p {
-  display: block;
-  margin: auto;
-  padding: 0;
+  letter-spacing: 0.2rem;
 }
 
 .container {
@@ -624,7 +617,7 @@ body {
           align-items: center;
   padding: 30px 50px 80px 50px;
   gap: 80px 0;
-  margin: 50px auto;
+  margin: 15px auto;
 }
 
 .row {
@@ -637,9 +630,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
-.card, .card-sayapasu, .card-tizu, .card-hige, .card-matsuo, .card-matsunaga, .card-miya, .card-waka, .card-mori, .card-ishi {
+.card {
   color: #0e2f8e;
   line-height: 2;
   font-weight: 500;
@@ -667,8 +661,8 @@ body {
   background: #ffffff99;
 }
 
-.name, .name-sayapasu {
-  font-size: 28px;
+.name {
+  font-size: 20px;
   font-weight: 300;
   -ms-flex-preferred-size: 5%;
       flex-basis: 5%;
@@ -686,21 +680,6 @@ body {
   border: double 4px #ff69b4;
   background-size: 16%;
   margin: 32px;
-}
-
-.card-sayapasu {
-  width: 100%;
-}
-
-.name-sayapasu {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-right: auto;
-}
-
-.card-tizu {
-  width: 100%;
 }
 
 img {
